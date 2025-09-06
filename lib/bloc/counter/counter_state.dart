@@ -5,7 +5,7 @@ class CounterState extends Equatable{
   final int counter;
 
   const CounterState({
-    this.counter=0
+    this.counter=1
   });
 
   CounterState copyWith ({int? counter}){
