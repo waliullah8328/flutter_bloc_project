@@ -16,8 +16,21 @@ class _CounterScreenState extends State<CounterScreen> {
         centerTitle: true,
       ),
       body: Column(
+
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text("0",style: TextStyle(fontSize: 50),),
+          Center(child: Text("0",style: TextStyle(fontSize: 50),)),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+
+              ElevatedButton(onPressed: (){}, child: Text("Increment")),
+              SizedBox(width: 20,),
+              ElevatedButton(onPressed: (){}, child: Text("Decrement")),
+            ],
+          )
         ],
       ),
     );
